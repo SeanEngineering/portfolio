@@ -1,0 +1,10 @@
+@use '../../../styles/mixins';
+
+.container {
+    @include mixins.flexing(column, start, center);
+    width: 98%;
+    height: 98%;
+    border: 2px solid gray;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+}

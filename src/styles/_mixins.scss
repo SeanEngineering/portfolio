@@ -1,0 +1,38 @@
+@use "./palette";
+
+@mixin flexing($direct, $justify, $align){
+    display: flex;
+    flex-direction: $direct;
+    justify-content: $justify;
+    align-items: $align;
+};
+
+@mixin phone {
+    @media only screen and (max-width: palette.$xs){
+      @content;
+    }
+  }
+  
+  @mixin tablets-pt {
+    @media only screen and (min-width: (palette.$sm+1)) and (max-width: palette.$md){
+      @content;
+    }
+  }
+  
+  @mixin tablet-ls {
+    @media only screen and (min-width: (palette.$md+1)) and (max-width: palette.$lg){
+      @content;
+    }
+  }
+  
+  @mixin laptop {
+    @media only screen and (min-width: (palette.$lg+1)) and (max-width:$xl){
+      @content;
+    }
+  }
+  
+  @mixin monitor{
+    @media only screen and (min-width: ($xl + 1)) {
+  
+    }
+  }
