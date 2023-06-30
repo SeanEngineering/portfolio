@@ -14,6 +14,7 @@ const NavLinks = ({ links }) => {
     };
     return links.map((link) => (
         <li
+            key={link}
             className="cat"
             onClick={(e) => changeNavigate(e)}
         >

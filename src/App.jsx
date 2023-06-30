@@ -7,6 +7,10 @@ import Home from './components/home/Home';
 import BorderContainer from './components/containers/borderContainer/BorderContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './components/about/About';
+import Footer from './components/footer/Footer';
+import Work from './components/work/Work';
+import Contact from './components/contact/Contact';
+import Books from './components/books/Books';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -14,17 +18,32 @@ function App() {
     return (
         <BrowserRouter>
             <PageContainer>
-                <Nav />
-                <Routes>
-                    <Route
-                        path="/"
-                        element={<Home />}
-                    ></Route>
-                    <Route
-                        path="/about"
-                        element={<About />}
-                    />
-                </Routes>
+                <BorderContainer>
+                    <Nav />
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={<Home />}
+                        ></Route>
+                        <Route
+                            path="/about"
+                            element={<About />}
+                        />
+                        <Route
+                            path="/work"
+                            element={<Work />}
+                        />
+                        <Route
+                            path="/contact"
+                            element={<Contact />}
+                        />
+                        <Route
+                            path="/books"
+                            element={<Books />}
+                        />
+                    </Routes>
+                </BorderContainer>
+                <Footer />
             </PageContainer>
         </BrowserRouter>
     );

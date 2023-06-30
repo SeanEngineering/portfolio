@@ -4,6 +4,8 @@
   line-height: 24px;
   font-weight: 400;
   background-color: #F5F5F5;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);

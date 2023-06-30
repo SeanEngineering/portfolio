@@ -3,25 +3,20 @@ import style from './Nav.module.scss';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-import NavLinks from '../NavLinks/NavLinks';
+import NavLinks from '../navLinks/NavLinks';
 
 export default function Nav({ yPos, categ, setCateg }) {
     const [y, setY] = useState(window.scrollY);
     const [navPos, setNavPos] = useState(false);
-    const navLinks = ['Home', 'About', 'Stack', 'Contact', 'Books'];
+    const navLinks = ['Home', 'About', 'Work', 'Contact', 'Books'];
 
     useEffect(() => {
         const handleScroll = (event) => {
             const pos = window.scrollY;
-            // console.log(pos);
             setY(pos);
         };
 
         window.addEventListener('scroll', handleScroll);
-        // console.log(y);
-        // return () => {
-        //     window.removeEventListener('scroll', handleScroll);
-        // };
     }, [y]);
 
     useEffect(() => {
@@ -30,7 +25,6 @@ export default function Nav({ yPos, categ, setCateg }) {
         } else {
             setNavPos(false);
         }
-        // console.log(navPos);
     }, [y]);
 
     return (

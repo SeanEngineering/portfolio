@@ -1,0 +1,48 @@
+@use '../../styles/mixins';
+
+.main{
+    @include mixins.flexing(column,center,center);
+    width: 100%;
+    // border: 2px solid black;
+    // border-radius: 30px;
+    margin-top: 50px;
+    height: auto;
+
+    &__intro{
+        @include mixins.flexing(column,center,center);
+        height: 400px;
+    }
+    &__body{
+        @include mixins.flexing(column, center, center);
+        width: 100%;
+        background-color: white;
+        h2{
+            text-align: start;
+            // background-color: red;
+            width: 50%;
+            margin: 0px;
+            margin-top: 30px;
+        }
+        p{
+            text-align: start;
+            width: 50%;
+            // margin: 50px;
+        }
+        img{
+            width: 300px;
+            border-radius: 30px;;
+            margin: 50px;
+        }
+        ol{
+            width: 50%;
+            text-align: start;
+
+            li{
+                font-size:large;
+                padding: 5px;
+            }
+        }
+        
+    }
+    
+}

@@ -14,14 +14,7 @@ const About = () => {
 
             <div className={style.main__body}>
                 <h2>Who Am I</h2>
-                <p>
-                    Hey there, glad you could make it 🙋🏻‍♂️. I'm Sean, a mechanical
-                    engineer who has delved into the world of software
-                    development. My goal in life is to become the best
-                    jack-of-all-trades engineer I can be, so that one day I can
-                    build my own products that I know people will love and
-                    enjoy.
-                </p>
+                <p></p>
                 <img
                     src={profile}
                     alt=""
@@ -56,7 +49,7 @@ const About = () => {
                 <h2>Other Stuff</h2>
                 <ol>
                     <li>
-                        I have a growing interest in entrepenurial studies. I
+                        📈 I have a growing interest in entrepenurial studies. I
                         have started small by making/selling my own workbenches,
                         created a (now silent) youtube channel with 3k+
                         subscribers, built up an investment portfolio and have
@@ -65,10 +58,10 @@ const About = () => {
                         via linkedin.
                     </li>
                     <li>
-                        I am currently on the pursuit of my best self, whether
-                        it be stoicism, wellbeing, fitness or even small habits.
-                        If this is something you're interested in my journey, I
-                        will occasionally be posting on this website.
+                        📚 I am currently on the pursuit of my best self,
+                        whether it be stoicism, wellbeing, fitness or even small
+                        habits. If this is something you're interested in my
+                        journey, I will occasionally be posting on this website.
                     </li>
                 </ol>
             </div>

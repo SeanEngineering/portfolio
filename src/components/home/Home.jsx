@@ -9,7 +9,7 @@ const Home = () => {
                 <h1>Welcome 👋</h1>
                 <h4 className={style.main__top__subtext}>
                     I'm Sean. I'm a Software Developer, Mechanical Engineer,
-                    Fitness Enthusiast and Bookworm. I have setup this site to
+                    Fitness Enthusiast and Bookworm. I have setup this site so
                     people can learn a bit more about me.
                 </h4>
             </div>
