@@ -24,7 +24,7 @@ function App() {
                     <Nav />
                     <Routes>
                         <Route
-                            path="/"
+                            path="/portfolio/"
                             element={
                                 <>
                                     <Home />
@@ -34,19 +34,19 @@ function App() {
                             }
                         ></Route>
                         <Route
-                            path="/about"
+                            path="/portfolio/about"
                             element={<About />}
                         />
                         <Route
-                            path="/work"
+                            path="/portfolio/work"
                             element={<Work />}
                         />
                         <Route
-                            path="/contact"
+                            path="/portfolio/contact"
                             element={<Contact />}
                         />
                         <Route
-                            path="/books"
+                            path="/portfolio/books"
                             element={<Books />}
                         />
                     </Routes>
