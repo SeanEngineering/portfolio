@@ -5,23 +5,30 @@
     width: 100%;
     // border: 2px solid black;
     // border-radius: 30px;
-    margin-top: 50px;
+    margin-top: 100px;
     height: auto;
 
     &__intro{
         @include mixins.flexing(column,center,center);
         height: 400px;
+        img{
+            height: 150px;
+        }
+        h1{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
     }
     &__body{
         @include mixins.flexing(column, center, center);
         width: 100%;
         background-color: white;
         h2{
-            text-align: start;
+            text-align: center;
             // background-color: red;
             width: 50%;
-            margin: 0px;
-            margin-top: 30px;
+            // margin: 0px;
+            // margin-top: 30px;
         }
         p{
             text-align: start;
@@ -45,4 +52,9 @@
         
     }
     
+}
+.line{
+    width: 70px;
+    border: 3px solid #2D64BC;
+
 }

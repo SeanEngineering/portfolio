@@ -18,7 +18,11 @@ import eshop from '../../assets/images/eshop.png';
 import duckos from '../../assets/images/duckOS.png';
 import employeeCreator from '../../assets/images/employeeCreator.png';
 import minishop from '../../assets/images/minishop.png';
-import { getWorkCards } from '../../service/portfolio';
+import greenMind from '../../assets/images/greenMind.png';
+import stepperController from '../../assets/images/stepper.jpg';
+import cnc from '../../assets/images/cnc.jpg';
+import smith from '../../assets/images/smith.png';
+import { getWorkCardByCompany, getWorkCards } from '../../service/portfolio';
 
 const Work = () => {
     const [workCardsListItems, setWorkCards] = useState([]);
@@ -40,12 +44,17 @@ const Work = () => {
         duckos: duckos,
         employeeCreator: employeeCreator,
         minishop: minishop,
+        greenMind: greenMind,
+        stepperController: stepperController,
+        cnc: cnc
+
+
     };
 
     useEffect(() => {
         (async () => {
             try {
-                const workCardList = await getWorkCards();
+                const workCardList = await getWorkCardByCompany();
                 setWorkCards(workCardList);
                 console.log(workCardList);
             } catch (error) {
@@ -57,9 +66,16 @@ const Work = () => {
     return (
         <div className={style.main}>
             <div className={style.main__intro}>
+                <img src={smith} alt="" />
                 <h1>My Work</h1>
                 <h3>Some of the projects I have worked on 💡</h3>
+                <hr className={style.line} />
             </div>
+            {/* <div className={style.main__buttons}>
+                <button>Software</button>
+                <button>Mechanical</button>
+                <button>Both</button>
+            </div> */}
             <div className={style.main__section}>
                 {workCardsListItems.map((item) => {
                     return (

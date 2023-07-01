@@ -5,6 +5,3 @@ const BookCard = ({ title, author, image, link }) => {
 };
 
 export default BookCard;
-{
-    title, author, image, link;
-}

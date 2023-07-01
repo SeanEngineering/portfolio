@@ -1,0 +1,23 @@
+@use '../../styles/mixins';
+
+.main{
+    @include mixins.flexing(row, space-around, center);
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+
+    img{
+        width: 200px;
+
+    }
+}
+.column{
+    height: 300px;
+    width: 100%;
+    @include mixins.flexing(column, center, center);
+    h2{
+        margin: 0px;
+        margin-bottom: 70px;
+    }
+}

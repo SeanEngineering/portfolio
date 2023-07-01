@@ -11,6 +11,8 @@ import Footer from './components/footer/Footer';
 import Work from './components/work/Work';
 import Contact from './components/contact/Contact';
 import Books from './components/books/Books';
+import Services from './components/services/Services';
+import Companies from './components/companies/Companies';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -23,7 +25,13 @@ function App() {
                     <Routes>
                         <Route
                             path="/"
-                            element={<Home />}
+                            element={
+                                <>
+                                    <Home />
+                                    <Services />
+                                    <Companies />
+                                </>
+                            }
                         ></Route>
                         <Route
                             path="/about"

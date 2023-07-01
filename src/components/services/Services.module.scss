@@ -1,0 +1,20 @@
+@use '../../styles/mixins';
+.column{
+    @include mixins.flexing(column, center, center);
+    width: 100%;
+    gap: 30px;
+    background-color: #F5F5F7;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    h2{
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+}
+.main{
+    @include mixins.flexing(row, space-between, center);
+    width: 60%;
+    height: auto;
+    gap: 20px;
+
+}

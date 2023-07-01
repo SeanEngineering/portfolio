@@ -1,20 +1,25 @@
 import React from 'react';
 import style from './About.module.scss';
 import profile from '../../assets/images/Portrait-SG.jpg';
+import about from '../../assets/images/messenger.png';
 
 const About = () => {
     return (
         <div className={style.main}>
             <div className={style.main__intro}>
+                <img
+                    src={about}
+                    alt=""
+                />
                 <h1>About</h1>
                 <h3>
                     Hey, I'm Sean. A mechanical engineer and software developer.
                 </h3>
+                <hr className={style.line} />
             </div>
 
             <div className={style.main__body}>
                 <h2>Who Am I</h2>
-                <p></p>
                 <img
                     src={profile}
                     alt=""
@@ -29,15 +34,16 @@ const About = () => {
                     </li>
                     <li>
                         🇦🇺 I moved to Sydney, Australia in 2021. Shortly after
-                        arriving a got a job at Bromic where I worked as the
+                        arriving I got a job at Bromic where I worked as the
                         lead engineer on my first patent project. Through this,
                         I gained a better understanding of computational fluid
                         dynamics (CFD).
                     </li>
                     <li>
-                        💻 I moved to the software engineering field in 2022.
-                        This jump was made to crave my thirst for learning, and
-                        to increase the impact I can make.
+                        💻 I moved to the software engineering field in 2022
+                        with _nology. This jump was made to crave my thirst for
+                        learning, and to increase the impact I can make. I also
+                        started working for Revenue NSW.
                     </li>
                     <li>
                         💪 On this website you will be able to find information
