@@ -7,9 +7,9 @@ const NavLinks = ({ links }) => {
     const changeNavigate = (e) => {
         e.preventDefault();
         if (e.target.innerText.toLowerCase() == 'home') {
-            navigate(`/`);
+            navigate(`/portfolio/`);
         } else {
-            navigate(`/${e.target.innerText.toLowerCase()}`);
+            navigate(`/portfolio/${e.target.innerText.toLowerCase()}`);
         }
     };
     return links.map((link) => (
