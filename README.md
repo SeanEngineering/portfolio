@@ -1,5 +1,3 @@
-Sure! Here's an example of a good README file for a portfolio:
-
 # Portfolio
 
 Welcome to my portfolio! This repository showcases my projects and skills as a software developer and mechanical engineer. Feel free to explore the different projects and get a sense of my experience and capabilities.
